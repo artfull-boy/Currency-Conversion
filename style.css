@@ -1,0 +1,114 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 50px 0px;
+  gap: 30px;
+  background-color: #f6f6f6;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+.title h1 {
+  color: #1f2261;
+  margin: 0;
+}
+.title p {
+  text-align: center;
+  color: #808080;
+}
+.converter {
+  background-color: white;
+  width: 50vw;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.converter label {
+  display: block;
+  color: #989898;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 20px 0px 0px;
+}
+.converter > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.converter > div > div {
+  display: flex;
+  gap: 4%;
+  align-items: center;
+}
+.converter > div > div > select {
+  width: 48%;
+  height: 50px;
+  padding-left: 20px;
+  border: 1px solid white;
+  outline: none;
+  color: #26278d;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  top: 0px;
+}
+.converter > div > div > select > option {
+    position: absolute;
+    bottom: 0px;
+}
+.converter > div > div > input {
+height: 45px;
+  width: 48%;
+  border-radius: 7px;
+  background: #efefef;
+  border: none;
+  padding-right: 30px;
+  color: #3c3c3c;
+  text-align: right;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.converted_input p {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 45px;
+    width: 48%;
+    border-radius: 7px;
+    background: #efefef;
+    border: none;
+    padding-right: 20px;
+    color: #3c3c3c;
+    text-align: right;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-right: 30px;
+}
+
+@media (max-width: 767px) {
+    .converter {
+        width: 90vw;
+      }
+}
